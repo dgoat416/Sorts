@@ -80,14 +80,14 @@ public class QuickSort
 
 			// if left reference's value is less than the pivot value it is in the correct 
 			// partition so move the reference to the next spot
-			else if (array[currStart] < pivot)
+			else if (array[currStart] <= pivot)
 				currStart++;
 
 			// if right reference's value is greater than the pivot value it is in the 
 			// correct partition so move the reference to the next spot
-			else if (array[currEnd] > pivot)
+			else if (array[currEnd] >= pivot)
 				currEnd--;
-
+			
 			// if right reference's value is less than pivot value and the   
 			// left reference's value is greater than pivot value then both 
 			// reference values are in the wrong partitions so swap them
@@ -167,7 +167,7 @@ public class QuickSort
 	public static void main(String[] args)
 	{
 		// TODO Auto-generated method stub
-		int[] arr = {0,9,8, 45, 7, 2, 33, 44, 17};
+		int[] arr = {0,9,8, 8, 9, 45, 7, 2, 33, 44, 17};
 
 		for (int i = 0; i < arr.length; i++)
 			System.out.print(arr[i] + "\n");
