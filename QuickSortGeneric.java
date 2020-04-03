@@ -1,3 +1,4 @@
+package com.Sorting;
 import java.util.Random;
 /**
  * Class that houses and tests the quick sort algorithm that works for any
@@ -90,6 +91,12 @@ public class QuickSortGeneric<T extends Comparable<T>>
 			else if (arrayObj[currEnd].compareTo(pivot) > 0)
 				currEnd--;
 			
+			else if (arrayObj [currStart].compareTo(pivot) == 0)
+				currStart++;
+			
+			else if (arrayObj[currEnd].compareTo(pivot) == 0)
+				currEnd--;
+				
 			else if (arrayObj[currStart].compareTo(pivot) > 0
 					&& arrayObj[currEnd].compareTo(pivot) < 0)
 					swap(arrayObj, currStart, currEnd);
