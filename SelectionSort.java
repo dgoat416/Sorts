@@ -50,6 +50,11 @@ public class SelectionSort
 			return m1;
 	}
 	
+	/**
+	 * Method to implement the selection sort algorithm
+	 * @param <T> = any object that implements the comparable interface
+	 * @param arr = array to sort
+	 */
 	public static <T extends Comparable<T>> void selectionSort(T[] arr)
 	{
 		T localMin = arr[0];
@@ -93,6 +98,7 @@ public class SelectionSort
 		
 		
 	}
+	
 	
 	public static void main(String[] args)
 	{
