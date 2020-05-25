@@ -1,2 +1,2 @@
 # Sorts
- Sorting Algotihms to Test
+ Sorting Algorithms
